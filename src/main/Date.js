@@ -19,7 +19,11 @@ class Date extends Component {
         const { selectedDate } = this.state;
         return (
             <div>
-                <DatePicker selected = { selectedDate  } onChange = { this.setSelectedDate }/>
+                <DatePicker 
+                    selected = { selectedDate  }   
+                    onChange = { this.setSelectedDate }
+                    dateFormat = "yyyy/MM/dd"
+                    />
             </div>
         )
     }
