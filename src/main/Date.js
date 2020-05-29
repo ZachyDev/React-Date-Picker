@@ -26,6 +26,7 @@ class Date extends Component {
                     // minDate = { new Date()}
                     // maxDate = { new Date()}
                     filterDate = { day => day.getDay() !== 6 && day.getDay() !==0}
+                    isClearable
                     />
             </div>
         )
