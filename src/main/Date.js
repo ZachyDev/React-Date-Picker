@@ -27,6 +27,8 @@ class Date extends Component {
                     // maxDate = { new Date()}
                     filterDate = { day => day.getDay() !== 6 && day.getDay() !==0}
                     isClearable
+                    showYearDropdown
+                    scrollableYearDropdown
                     />
             </div>
         )
