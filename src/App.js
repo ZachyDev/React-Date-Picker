@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Date from './main/Date'
 function App() {
   return (
     <div className="App">
       <h1>Date picker</h1>
+      <Date />
     </div>
   );
 }
