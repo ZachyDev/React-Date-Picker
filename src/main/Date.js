@@ -22,7 +22,9 @@ class Date extends Component {
                 <DatePicker 
                     selected = { selectedDate  }   
                     onChange = { this.setSelectedDate }
-                    dateFormat = "yyyy/MM/dd"
+                    dateFormat = "dd/MM/yyyy"
+                    minDate = { new Date()}
+                    maxDate = { new Date()}
                     />
             </div>
         )
