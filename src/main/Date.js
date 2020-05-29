@@ -23,8 +23,9 @@ class Date extends Component {
                     selected = { selectedDate  }   
                     onChange = { this.setSelectedDate }
                     dateFormat = "dd/MM/yyyy"
-                    minDate = { new Date()}
-                    maxDate = { new Date()}
+                    // minDate = { new Date()}
+                    // maxDate = { new Date()}
+                    filterDate = { day => day.getDay() !== 6 && day.getDay() !==0}
                     />
             </div>
         )
