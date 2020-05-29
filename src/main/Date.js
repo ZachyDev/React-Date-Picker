@@ -11,15 +11,15 @@ class Date extends Component {
     }
     setSelectedDate = (date) => {
         this.setState({
-            selected: date
+            selectedDate: date
         })
     }
     
     render() {
-        const { selectedDate } = this.props;
+        const { selectedDate } = this.state;
         return (
             <div>
-                <DatePicker selected = { selectedDate  } onChange = { this.setSelectedDate}/>
+                <DatePicker selected = { selectedDate  } onChange = { this.setSelectedDate }/>
             </div>
         )
     }
