@@ -21,6 +21,10 @@ setSelectedDate = (date) => {
                 <DatePicker 
                     selected = { selectedDate }
                     onChange = { this.setSelectedDate }
+                    filterDate = { date => date.getDay() !== 6 && date.getDay() !== 0}
+                    isClearable
+                    showYearDropdown
+                    scrollableYearDropdown
                 />
             </div>
         )
