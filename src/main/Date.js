@@ -24,6 +24,7 @@ setSelectedDate = (date) => {
                     filterDate = { date => date.getDay() !== 6 && date.getDay() !== 0}
                     isClearable
                     showYearDropdown
+                    dateFormat = "dd/MM/yyyy"
                     scrollableYearDropdown
                 />
             </div>
