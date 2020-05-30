@@ -24,6 +24,7 @@ class Date extends Component {
                     onChange = { this.setSelectedDate }
                     isClearable
                     minDate = { new Date()}
+                    filterDate = { date => date.getDay() !== 6 && date.getDay()!== 0 }
                  />
             </div>
         )
