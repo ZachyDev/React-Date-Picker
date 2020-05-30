@@ -23,6 +23,7 @@ class Date extends Component {
                     selected = { selectedDate }
                     onChange = { this.setSelectedDate }
                     isClearable
+                    minDate = { new Date()}
                  />
             </div>
         )
