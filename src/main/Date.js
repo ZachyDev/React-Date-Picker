@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import DatePicker  from 'react-datepicker'
-import "react-datepicker/dist/react-datepicker.css"
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
 class Date extends Component {
     constructor(props) {
         super(props)
@@ -9,23 +9,19 @@ class Date extends Component {
              selectedDate: ''
         }
     }
-    setSelectedDate = (date) => {
-        this.setState({
-            selectedDate: date
-        })
-    }
-    
+setSelectedDate = (date) => {
+    this.setState({
+        selectedDate: date
+    })
+}
     render() {
         const { selectedDate } = this.state
         return (
             <div>
-                <DatePicker
+                <DatePicker 
                     selected = { selectedDate }
                     onChange = { this.setSelectedDate }
-                    isClearable
-                    minDate = { new Date()}
-                    filterDate = { date => date.getDay() !== 6 && date.getDay()!== 0 }
-                 />
+                />
             </div>
         )
     }
